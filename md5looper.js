@@ -7,7 +7,7 @@ http.createServer(function (req, res) {
   res.writeHead(200, {'Content-Type': 'text/plain'});
   
   var url = require('url');
-var url_parts = url.parse(request.url, true);
+var url_parts = url.parse(req.url, true);
 var query = url_parts.query;
 
 var word = query.word;
