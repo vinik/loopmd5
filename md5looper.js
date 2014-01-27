@@ -11,7 +11,7 @@ var url_parts = url.parse(req.url, true);
 var query = url_parts.query;
 
 var word = query.word;
-var times = parseint(query.times);
+var times = parseInt(query.times);
 
 i = 0;
 result = md5(word);
